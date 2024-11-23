@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Converter</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div>
+    <h1>Image Converter</h1>
+    <input type="file" id="upload" accept="image/*" />
+    <select id="effect">
+      <option value="grayscale">Grayscale</option>
+      <option value="blur">Blur</option>
+    </select>
+    <button id="apply">Apply Effect</button>
+  </div>
+  <div>
+    <h2>Results</h2>
+    <canvas id="original" style="border:1px solid black;"></canvas>
+    <canvas id="processed" style="border:1px solid black;"></canvas>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
